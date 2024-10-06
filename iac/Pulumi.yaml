@@ -1,0 +1,14 @@
+name: rekognition
+runtime: go
+description: Minimal stack for testing AWS Rekognition
+config:
+  bucket_prefix:
+    description: The prefix of the S3 bucket to create
+    default: rekognition-bucket
+  collection_name:
+    description: The name of the S3 bucket to create
+    default: rekognition-collection
+  pulumi:stack: poc
+  pulumi:tags:
+    value:
+      pulumi:template: aws-go
